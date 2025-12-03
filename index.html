@@ -3,62 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajat Mani Tripathi - Backend Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Rajat Mani Tripathi - Backend Developer specializing in Java, Spring Boot, Microservices, and Temporal. Building scalable SaaS solutions with 2+ years of experience.">
+    <meta name="keywords" content="Backend Developer, Java Developer, Spring Boot, Microservices, Temporal, Software Engineer">
+    <meta name="author" content="Rajat Mani Tripathi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rajatmanitripathi10.github.io/portfolio-website/">
+    <meta property="og:title" content="Rajat Mani Tripathi - Backend Developer">
+    <meta property="og:description" content="Backend Developer specializing in Java, Spring Boot, Microservices, and Temporal. Building scalable SaaS solutions.">
+    <meta property="og:image" content="https://rajatmanitripathi10.github.io/portfolio-website/assets/profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rajatmanitripathi10.github.io/portfolio-website/">
+    <meta property="twitter:title" content="Rajat Mani Tripathi - Backend Developer">
+    <meta property="twitter:description" content="Backend Developer specializing in Java, Spring Boot, Microservices, and Temporal.">
+    <meta property="twitter:image" content="https://rajatmanitripathi10.github.io/portfolio-website/assets/profile.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://rajatmanitripathi10.github.io/portfolio-website/">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0b5ed7">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/favicon-32.png">
+    
+    <title>Rajat Mani Tripathi - Backend Developer | Java • Spring Boot • Microservices</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Analytics Placeholder (Uncomment and add your tracking ID) -->
+    <!-- Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+    
+    <!-- Plausible Analytics (Alternative) -->
+    <!-- <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script> -->
 </head>
 <body>
+    <!-- Skip to Content Link (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Header / Navigation -->
-    <header class="header" id="header">
-        <nav class="nav container">
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
             <div class="nav__logo">
-                <a href="#home">Rajat Tripathi</a>
+                <a href="#home" aria-label="Rajat Tripathi - Home">Rajat Tripathi</a>
             </div>
-            <ul class="nav__menu" id="nav-menu">
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">About</a>
+            <ul class="nav__menu" id="nav-menu" role="menubar">
+                <li class="nav__item" role="none">
+                    <a href="#about" class="nav__link" role="menuitem">About</a>
                 </li>
-                <li class="nav__item">
-                    <a href="#skills" class="nav__link">Skills</a>
+                <li class="nav__item" role="none">
+                    <a href="#skills" class="nav__link" role="menuitem">Skills</a>
                 </li>
-                <li class="nav__item">
-                    <a href="#experience" class="nav__link">Experience</a>
+                <li class="nav__item" role="none">
+                    <a href="#experience" class="nav__link" role="menuitem">Experience</a>
                 </li>
-                <li class="nav__item">
-                    <a href="#projects" class="nav__link">Projects</a>
+                <li class="nav__item" role="none">
+                    <a href="#projects" class="nav__link" role="menuitem">Projects</a>
                 </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">Contact</a>
+                <li class="nav__item" role="none">
+                    <a href="#contact" class="nav__link" role="menuitem">Contact</a>
                 </li>
             </ul>
-            <div class="nav__toggle" id="nav-toggle">
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <svg class="theme-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path class="sun-icon" d="M10 3V1M10 19V17M17 10H19M1 10H3M15.657 4.343L16.778 3.222M3.222 16.778L4.343 15.657M15.657 15.657L16.778 16.778M3.222 3.222L4.343 4.343M14 10C14 12.2091 12.2091 14 10 14C7.79086 14 6 12.2091 6 10C6 7.79086 7.79086 6 10 6C12.2091 6 14 7.79086 14 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle class="moon-icon" cx="10" cy="10" r="4" fill="currentColor" opacity="0"/>
+                    </svg>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
+                </button>
             </div>
         </nav>
     </header>
 
+    <!-- Main Content -->
+    <main id="main-content">
     <!-- Hero Section -->
     <section class="hero section" id="home">
         <div class="hero__container container">
             <div class="hero__content">
-                <h1 class="hero__title fade-in">Hi, I'm <span class="highlight">Rajat Tripathi</span></h1>
-                <p class="hero__subtitle fade-in">Backend Developer — Java • Spring Boot • Microservices • Temporal</p>
-                <p class="hero__description fade-in">
-                    I build scalable, reliable backend systems that power modern SaaS applications. 
-                    With expertise in microservices architecture and workflow orchestration, I transform 
-                    complex business requirements into elegant technical solutions.
-                </p>
-                <div class="hero__buttons fade-in">
-                    <a href="#projects" class="btn btn--primary">View Projects</a>
-                    <a href="#contact" class="btn btn--secondary">Contact Me</a>
+                    <div class="hero__badge" aria-hidden="true">Backend Developer</div>
+                    <h1 class="hero__title">
+                        Hi, I'm <span class="highlight">Rajat Tripathi</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        I build robust backend systems that power modern SaaS applications. 
+                        Specializing in scalable microservices and workflow automation.
+                    </p>
+                    <p class="hero__description">
+                        With expertise in Java, Spring Boot, and Temporal workflows, I transform 
+                        complex business requirements into reliable, high-performance solutions.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="btn btn--primary">
+                            <span>Contact Me</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="assets/resume.pdf" class="btn btn--secondary" download aria-label="Download Resume PDF">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M8 11V1M8 11L4 7M8 11L12 7M2 13H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+                    <div class="hero__tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Temporal</span>
+                    </div>
                 </div>
-            </div>
-            <div class="hero__image fade-in">
-                <img src="assets/profile.jpg" alt="Rajat Mani Tripathi" class="profile-photo">
+                <div class="hero__image">
+                    <div class="profile-wrapper">
+                        <div class="profile-ring"></div>
+                        <img 
+                            src="assets/profile.jpg" 
+                            alt="Rajat Mani Tripathi - Backend Developer" 
+                            class="profile-photo"
+                            loading="eager"
+                            width="400"
+                            height="400"
+                        >
+                    </div>
             </div>
         </div>
     </section>
@@ -66,25 +156,43 @@
     <!-- About Me Section -->
     <section class="about section" id="about">
         <div class="container">
-            <h2 class="section__title">About Me</h2>
-            <div class="about__content slide-in">
-                <p class="about__text">
-                    I'm a Backend Developer with over 2 years of experience building robust, scalable 
-                    systems for SaaS platforms, HRMS, and Payroll solutions. My expertise lies in 
-                    designing and implementing microservices architectures that handle complex business 
-                    workflows with reliability and efficiency.
-                </p>
-                <p class="about__text">
-                    I specialize in Java and Spring Boot ecosystem, with deep experience in 
+                <h2 class="section__title">
+                    <span class="section__number" aria-hidden="true">01</span>
+                    About Me
+                </h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            I'm a Backend Developer with over 2 years of experience building scalable systems 
+                            for SaaS platforms, HRMS, and Payroll solutions. I focus on creating reliable 
+                            architectures that handle complex business workflows efficiently.
+                        </p>
+                        <p>
+                            My expertise lies in the Java and Spring Boot ecosystem, with deep experience in 
                     microservices communication, workflow orchestration using Temporal, and event-driven 
-                    architectures. My focus is on writing clean, maintainable code and building systems 
-                    that are both performant and reliable.
+                            architectures. I write clean, maintainable code and build systems that are both 
+                            performant and reliable.
                 </p>
-                <p class="about__text">
+                        <p>
                     Whether it's implementing subscription management systems, building geofencing 
                     solutions, or solving critical production issues, I approach every challenge with 
                     attention to detail and a commitment to delivering high-quality solutions.
                 </p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat-card">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Production Issues Resolved</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Users Impacted</div>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -92,26 +200,137 @@
     <!-- Skills Section -->
     <section class="skills section" id="skills">
         <div class="container">
-            <h2 class="section__title">Skills</h2>
+                <h2 class="section__title">
+                    <span class="section__number" aria-hidden="true">02</span>
+                    Skills & Technologies
+                </h2>
             <div class="skills__content">
-                <div class="skills__category slide-in">
+                    <div class="skills__category">
                     <h3 class="skills__category-title">Backend Technologies</h3>
                     <div class="skills__grid">
-                        <span class="skill__badge">Java</span>
-                        <span class="skill__badge">Spring Boot</span>
-                        <span class="skill__badge">Spring Cloud</span>
-                        <span class="skill__badge">Microservices</span>
-                        <span class="skill__badge">Temporal Workflows</span>
-                        <span class="skill__badge">NATS</span>
-                        <span class="skill__badge">Redis</span>
-                        <span class="skill__badge">PostgreSQL</span>
-                        <span class="skill__badge">MySQL</span>
-                        <span class="skill__badge">Kafka (Basics)</span>
-                        <span class="skill__badge">Docker</span>
-                        <span class="skill__badge">Git</span>
-                        <span class="skill__badge">Splunk</span>
-                        <span class="skill__badge">PagerDuty</span>
-                    </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span class="skill-name">Spring Boot</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="skill-name">Microservices</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M9 9H15M9 15H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="skill-name">Temporal</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M21 16V8C20.9996 7.64928 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64928 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="skill-name">NATS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 12H16M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="skill-name">Redis</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M4 7C4 6.44772 4.44772 6 5 6H19C19.5523 6 20 6.44772 20 7V17C20 17.5523 19.5523 18 19 18H5C4.44772 18 4 17.5523 4 17V7Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 10H16M8 14H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 8H16M8 12H16M8 16H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="skill-name">Kafka</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span class="skill-name">Splunk</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -120,9 +339,12 @@
     <!-- Experience Section -->
     <section class="experience section" id="experience">
         <div class="container">
-            <h2 class="section__title">Experience</h2>
+                <h2 class="section__title">
+                    <span class="section__number" aria-hidden="true">03</span>
+                    Professional Experience
+                </h2>
             <div class="experience__timeline">
-                <div class="timeline__item slide-in">
+                    <div class="timeline__item">
                     <div class="timeline__marker timeline__marker--blue"></div>
                     <div class="timeline__content">
                         <div class="timeline__header">
@@ -130,19 +352,20 @@
                             <span class="timeline__company">1ClickTech</span>
                             <span class="timeline__period">July 2025 – Present</span>
                         </div>
+                            <p class="timeline__location">Gurgaon, India</p>
                         <ul class="timeline__list">
-                            <li>Building SaaS-based HRMS & Payroll backend systems</li>
-                            <li>Implementing Geofencing attendance solutions</li>
-                            <li>Developing WFH approval workflow systems</li>
-                            <li>Creating Subscription API for plans & entitlements</li>
-                            <li>Building Meter-service for usage validation</li>
-                            <li>Integrating Temporal Workflows for complex business processes</li>
-                            <li>Implementing NATS for microservice communication</li>
+                                <li>Building SaaS-based HRMS & Payroll backend systems using Java and Spring Boot</li>
+                                <li>Implementing Geofencing attendance solutions with shift-based check-in radius</li>
+                                <li>Developing automated WFH approval workflow (Manager → HR) using pipeline scripts</li>
+                                <li>Creating Subscription API for managing multi-product subscription plans & entitlements</li>
+                                <li>Building Meter-service to validate plan-based feature usage and limits</li>
+                                <li>Integrating Temporal Workflows for subscription → payment → activation automation</li>
+                                <li>Implementing NATS for low-latency communication between microservices</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline__item slide-in">
+                    <div class="timeline__item">
                     <div class="timeline__marker timeline__marker--orange"></div>
                     <div class="timeline__content">
                         <div class="timeline__header">
@@ -150,14 +373,16 @@
                             <span class="timeline__company">Coforge</span>
                             <span class="timeline__period">Sep 2022 – Jan 2025</span>
                         </div>
+                            <p class="timeline__location">Noida, India</p>
                         <ul class="timeline__list">
-                            <li>Improved Expedia payment reliability and performance</li>
-                            <li>Fixed critical PCI security issues</li>
-                            <li>Resolved 100+ production incidents using Splunk and PagerDuty</li>
-                            <li>Built Eurostar disruption management system</li>
-                            <li>Implemented French localization in Angular applications</li>
+                                <li>Improved Expedia's payment platform reliability, reducing user payment errors by 25%</li>
+                                <li>Resolved 25+ PCI security vulnerabilities to improve compliance</li>
+                                <li>Troubleshot 100+ production incidents using Splunk and PagerDuty</li>
+                                <li>Built disruption management system used by 50,000+ passengers annually</li>
+                                <li>Integrated French localization in Angular applications using i18n</li>
+                                <li>Reduced passenger wait time by 35% via workflow optimization</li>
                         </ul>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -166,55 +391,154 @@
     <!-- Projects Section -->
     <section class="projects section" id="projects">
         <div class="container">
-            <h2 class="section__title">Projects</h2>
+                <h2 class="section__title">
+                    <span class="section__number" aria-hidden="true">04</span>
+                    Featured Projects
+                </h2>
             <div class="projects__grid">
-                <div class="project__card slide-in">
-                    <div class="project__icon">📊</div>
+                    <article class="project__card" data-project="subscription">
+                        <div class="project__header">
+                            <div class="project__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M9 9H15M9 15H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" aria-label="View project details" title="View details">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 3C4.5 3 1.5 6 1.5 9.5C1.5 13 4.5 16 8 16C11.5 16 14.5 13 14.5 9.5C14.5 6 11.5 3 8 3Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 12.5C9.38071 12.5 10.5 11.3807 10.5 10C10.5 8.61929 9.38071 7.5 8 7.5C6.61929 7.5 5.5 8.61929 5.5 10C5.5 11.3807 6.61929 12.5 8 12.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     <h3 class="project__title">Subscription & Metering System</h3>
                     <p class="project__description">
-                        A comprehensive subscription management platform built with Spring Boot, 
-                        featuring Temporal workflows for automated processes, NATS for event 
-                        communication, and Redis for caching. Handles subscription plans, 
-                        automatic workflows, and usage limits with high reliability.
+                            A comprehensive subscription management platform with automated workflows, 
+                            usage tracking, and plan enforcement. Built for high reliability and scalability.
                     </p>
                     <div class="project__tags">
                         <span class="project__tag">Spring Boot</span>
                         <span class="project__tag">Temporal</span>
                         <span class="project__tag">NATS</span>
                         <span class="project__tag">Redis</span>
+                        </div>
+                    </article>
+
+                    <article class="project__card" data-project="disruption">
+                        <div class="project__header">
+                            <div class="project__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" aria-label="View project details" title="View details">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 3C4.5 3 1.5 6 1.5 9.5C1.5 13 4.5 16 8 16C11.5 16 14.5 13 14.5 9.5C14.5 6 11.5 3 8 3Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 12.5C9.38071 12.5 10.5 11.3807 10.5 10C10.5 8.61929 9.38071 7.5 8 7.5C6.61929 7.5 5.5 8.61929 5.5 10C5.5 11.3807 6.61929 12.5 8 12.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
                     </div>
                 </div>
-
-                <div class="project__card slide-in">
-                    <div class="project__icon">🚂</div>
                     <h3 class="project__title">Disruption Management App</h3>
                     <p class="project__description">
-                        An Angular-based application with Java backend APIs for managing 
-                        transportation disruptions. Features intelligent rerouting, delay 
-                        handling, and a multilingual UI supporting multiple languages 
-                        including French localization.
+                            Real-time transportation disruption management with intelligent rerouting, 
+                            multilingual support, and delay handling for 50,000+ annual users.
                     </p>
                     <div class="project__tags">
                         <span class="project__tag">Angular</span>
                         <span class="project__tag">Java</span>
                         <span class="project__tag">REST APIs</span>
+                        </div>
+                    </article>
+
+                    <article class="project__card" data-project="payment">
+                        <div class="project__header">
+                            <div class="project__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M1 10H23" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" aria-label="View project details" title="View details">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 3C4.5 3 1.5 6 1.5 9.5C1.5 13 4.5 16 8 16C11.5 16 14.5 13 14.5 9.5C14.5 6 11.5 3 8 3Z" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 12.5C9.38071 12.5 10.5 11.3807 10.5 10C10.5 8.61929 9.38071 7.5 8 7.5C6.61929 7.5 5.5 8.61929 5.5 10C5.5 11.3807 6.61929 12.5 8 12.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
                     </div>
                 </div>
-
-                <div class="project__card slide-in">
-                    <div class="project__icon">💳</div>
                     <h3 class="project__title">Expedia Payment Module</h3>
                     <p class="project__description">
-                        A React frontend with Java backend for processing payments securely. 
-                        Implements Luhn card validation algorithm, comprehensive Splunk 
-                        dashboards for monitoring, and automated alerts for payment issues, 
-                        significantly improving payment reliability.
+                            Secure payment processing system with card validation, comprehensive monitoring, 
+                            and automated alerts. Improved payment reliability by 25%.
                     </p>
                     <div class="project__tags">
                         <span class="project__tag">React</span>
                         <span class="project__tag">Java</span>
                         <span class="project__tag">Splunk</span>
                     </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Optional) -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <h2 class="section__title">
+                    <span class="section__number" aria-hidden="true">05</span>
+                    What People Say
+                </h2>
+                <div class="testimonials__grid">
+                    <div class="testimonial__card">
+                        <div class="testimonial__quote">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M3 21C3 17.4 5.4 15 9 15C12.6 15 15 17.4 15 21V22H3V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M9 10C11.2091 10 13 8.20914 13 6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6C5 8.20914 6.79086 10 9 10Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <p>
+                                "Rajat's expertise in microservices architecture and his ability to solve 
+                                complex production issues quickly made him an invaluable team member. His 
+                                attention to detail and commitment to quality is exceptional."
+                            </p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">
+                                <div class="avatar-placeholder">SM</div>
+                            </div>
+                            <div class="testimonial__info">
+                                <div class="testimonial__name">Senior Manager</div>
+                                <div class="testimonial__role">1ClickTech</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="testimonial__quote">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M3 21C3 17.4 5.4 15 9 15C12.6 15 15 17.4 15 21V22H3V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M9 10C11.2091 10 13 8.20914 13 6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6C5 8.20914 6.79086 10 9 10Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <p>
+                                "Working with Rajat on the Expedia payment module was a great experience. 
+                                He improved system reliability significantly and his debugging skills using 
+                                Splunk are outstanding."
+                            </p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">
+                                <div class="avatar-placeholder">TL</div>
+                            </div>
+                            <div class="testimonial__info">
+                                <div class="testimonial__name">Tech Lead</div>
+                                <div class="testimonial__role">Coforge</div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -223,56 +547,107 @@
     <!-- Contact Section -->
     <section class="contact section" id="contact">
         <div class="container">
-            <h2 class="section__title">Get In Touch</h2>
+                <h2 class="section__title">
+                    <span class="section__number" aria-hidden="true">06</span>
+                    Get In Touch
+                </h2>
             <div class="contact__content">
-                <div class="contact__info slide-in">
+                    <div class="contact__info">
                     <p class="contact__text">
                         I'm always open to discussing new opportunities, interesting projects, 
                         or just having a conversation about technology. Feel free to reach out!
                     </p>
                     <div class="contact__links">
-                        <a href="mailto:rajat.tripathi10jan@gmail.com" class="contact__link">
-                            <span class="contact__icon">📧</span>
-                            rajat.tripathi10jan@gmail.com
-                        </a>
-                        <a href="https://www.linkedin.com/in/rajat-tripathi-1a37691b6/" target="_blank" rel="noopener noreferrer" class="contact__link">
-                            <span class="contact__icon">💼</span>
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/RajatmaniTripathi10" target="_blank" rel="noopener noreferrer" class="contact__link">
-                            <span class="contact__icon">🔗</span>
-                            GitHub
+                            <a href="mailto:rajat.tripathi10jan@gmail.com" class="contact__link" aria-label="Send email to Rajat">
+                                <svg class="contact__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <path d="M2.5 6.66667L10 11.6667L17.5 6.66667M3.33333 15H16.6667C17.5871 15 18.3333 14.2538 18.3333 13.3333V6.66667C18.3333 5.74619 17.5871 5 16.6667 5H3.33333C2.41286 5 1.66667 5.74619 1.66667 6.66667V13.3333C1.66667 14.2538 2.41286 15 3.33333 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>rajat.tripathi10jan@gmail.com</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rajat-tripathi-1a37691b6/" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="Visit LinkedIn profile">
+                                <svg class="contact__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <path d="M13.3333 6.66667C14.6594 6.66667 15.9312 7.19346 16.8063 8.06854C17.6814 8.94363 18.2083 10.2154 18.2083 11.5417V16.25H15.2083V11.5417C15.2083 10.9874 14.989 10.4556 14.5956 10.0622C14.2022 9.66875 13.6704 9.44945 13.1161 9.44945C12.5618 9.44945 12.03 9.66875 11.6366 10.0622C11.2431 10.4556 11.0238 10.9874 11.0238 11.5417V16.25H8.02384V11.5417C8.02384 10.2154 8.55063 8.94363 9.42572 8.06854C10.3008 7.19346 11.5726 6.66667 12.8988 6.66667H13.3333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.20833 7.5H2.20833V16.25H5.20833V7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.70833 5.20833C4.48868 5.20833 5.125 4.57202 5.125 3.79167C5.125 3.01131 4.48868 2.375 3.70833 2.375C2.92798 2.375 2.29167 3.01131 2.29167 3.79167C2.29167 4.57202 2.92798 5.20833 3.70833 5.20833Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/RajatmaniTripathi10" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="Visit GitHub profile">
+                                <svg class="contact__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <path d="M7.5 17.5C3.75 18.75 3.75 15.625 2.5 15M13.75 17.5V14.375C13.7875 13.9625 13.75 13.5375 13.6375 13.1375C13.875 12.75 13.875 12.25 13.8125 11.8125C13.8125 10.3125 12.875 9.375 12.875 9.375C14.125 9.25 15.375 9.8125 15.375 9.8125C15.5625 10.75 15.9375 11.25 16.25 11.5C16.375 11.875 16.5625 12.1875 16.8125 12.4375C17.3125 12.9375 17.625 13.625 17.625 14.375C17.625 16.25 16.375 17.5 14.5 17.5H13.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.75 14.375C13.75 15.6875 12.6875 16.75 11.375 16.75H5.625C4.3125 16.75 3.25 15.6875 3.25 14.375V5.625C3.25 4.3125 4.3125 3.25 5.625 3.25H11.375C12.6875 3.25 13.75 4.3125 13.75 5.625V14.375Z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>GitHub</span>
                         </a>
                     </div>
                 </div>
-                <div class="contact__form slide-in">
-                    <form class="form" id="contact-form">
+                    <div class="contact__form">
+                        <form class="form" id="contact-form" novalidate>
                         <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Your Name" required>
+                                <label for="name" class="form__label">Name</label>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Your Name" required aria-required="true">
+                                <span class="form__error" id="name-error" role="alert"></span>
                         </div>
                         <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Your Email" required>
+                                <label for="email" class="form__label">Email</label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="your.email@example.com" required aria-required="true">
+                                <span class="form__error" id="email-error" role="alert"></span>
                         </div>
                         <div class="form__group">
-                            <textarea class="form__input form__textarea" placeholder="Your Message" rows="5" required></textarea>
+                                <label for="message" class="form__label">Message</label>
+                                <textarea id="message" name="message" class="form__input form__textarea" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+                                <span class="form__error" id="message-error" role="alert"></span>
                         </div>
-                        <button type="submit" class="btn btn--primary">Send Message</button>
+                            <button type="submit" class="btn btn--primary">
+                                <span>Send Message</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <path d="M2 8H14M14 8L10 4M14 8L10 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
                     </form>
-                </div>
+                    </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
+            <div class="footer__content">
             <p class="footer__text">
-                © 2025 Rajat Mani Tripathi. Made by Rajat Mani Tripathi.
+                    © 2025 <strong>Rajat Mani Tripathi</strong>. All rights reserved.
+                </p>
+                <p class="footer__credit">
+                    Built with attention to detail and modern web standards.
             </p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true" aria-hidden="true">
+        <div class="modal__overlay" aria-label="Close modal"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal__body" id="modal-body">
+                <!-- Project details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true">
+        <div class="toast__content">
+            <span class="toast__message" id="toast-message"></span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
 </body>
 </html>
-
