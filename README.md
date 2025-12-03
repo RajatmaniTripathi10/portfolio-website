@@ -111,11 +111,11 @@ Then follow **Step 3** from Method 1 to enable GitHub Pages.
 Edit the contact section in `index.html`:
 
 ```html
-<a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="contact__link">
+<a href="https://www.linkedin.com/in/rajat-tripathi-1a37691b6/" target="_blank" rel="noopener noreferrer" class="contact__link">
     <span class="contact__icon">💼</span>
     LinkedIn
 </a>
-<a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="contact__link">
+<a href="https://github.com/RajatmaniTripathi10" target="_blank" rel="noopener noreferrer" class="contact__link">
     <span class="contact__icon">🔗</span>
     GitHub
 </a>
@@ -174,8 +174,8 @@ This project is open source and available for personal use.
 
 **Rajat Mani Tripathi**
 - Email: rajat.tripathi10jan@gmail.com
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- LinkedIn: [https://www.linkedin.com/in/rajat-tripathi-1a37691b6/](https://www.linkedin.com/in/rajat-tripathi-1a37691b6/)
+- GitHub: [https://github.com/RajatmaniTripathi10](https://github.com/RajatmaniTripathi10)
 
 ---
 
